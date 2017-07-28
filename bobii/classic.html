@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bobii Fruitii-經典特調</title>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/lightbox.min.css" rel="stylesheet">
+	<style>
+		body{
+			margin-top: -20px;/*為什麼上面有空隙*/
+			padding: 0;
+		
+		}
+		header{
+			width:100%;
+			height: 400px;
+			background: url(images/page2background.jpg) center 0 no-repeat;
+			background-size: cover;
+			position: relative;
+			font-family: 'Nunito', sans-serif;
+			color: white;
+
+		}
+		header h1{
+			text-align: center;
+			position: relative;
+			top:45%;
+			display: block;
+			height: 100px;
+			width: 900px;
+			left: 50%;
+			margin-left: -450px;
+		}
+		header .title{
+			font-size: 80px;
+			letter-spacing: 22px;
+
+		}
+		/*---------------------視窗上方固定選單-----------------------------*/
+		nav{
+			width:100%;
+			position:fixed;
+			background:rgba(0,0,0,0.59);
+			z-index: 99;
+			}
+		nav ul{
+			width:100%;
+			max-width:1480px;
+			text-align:center;
+			
+			margin:0 auto;
+			overflow: hidden;
+			}
+		nav ul li{
+			display:inline-block;
+			height:80px;
+			}
+		nav ul li a{
+			text-decoration:none;
+			padding:10px 40px;
+			color:rgba(255,255,255,1.00);
+			line-height:80px;
+			
+			}
+		nav ul li a:hover{
+			text-decoration:none;
+			color: pink;
+
+			}
+		nav ul li a:active, nav ul li a:focus{
+			text-decoration:none;
+			color: #FFE583;
+		}
+
+
+		#logo img{
+			display: inline-block;
+			width: auto;
+			height: 70px;
+			vertical-align: middle;
+			
+		}
+		.navbar{
+	      transition: all .5s;
+	    }
+		/*---------------------內容-----------------------------*/
+		.classic{
+			margin-bottom: 20px;
+		}
+		.classic img{
+			width: 100%;
+			margin-top:20px;
+		}
+		.text{
+			padding: 30px 20px 5px 20px;
+		}
+
+		footer{
+			height: 80px;
+			background:#B1B0B2;
+			color: white;
+			display: flex;
+			align-items: center;
+			margin-top: 5%;
+			
+		}
+		.footertext{
+			margin-left: 10%;
+			margin-right: 10%;
+			max-width: 100%;
+			
+		
+		}
+		.fa-facebook{
+		vertical-align: middle;
+		font-size: 1.2em;
+		margin: 0 5px;
+	
+		}
+		.footertext a:hover{
+		text-decoration:none;
+		color: pink;
+
+		}
+		.footertext a:active, .footer a:focus{
+			text-decoration:none;
+			color: #FFE583;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-fixed-top">
+		<ul>
+			<li><a href="news.html">最新消息</a></li>
+			<li><a href="#area2">全部商品</a></li>
+			<li id="logo"><a href="index.html#area1"><img src="images/logo.png" alt="首頁"></a></li>
+			<li><a href="index.html#area3">關於我們</a></li>
+			<li><a href="index.html#area4">門市據點</a></li>
+		</ul>
+	</nav>
+	<h1>	
+		<span class="title">Signature Drink</span>
+	</h1>
+	</header>
+	<div class="container">
+		<div class="row text">
+			Bobii Frutii 的每一杯飲品都帶著我們對消費著的真心誠意而來。<br>
+			我們用心研發各式原物料、嚴選在地食材，精心製作就是為了讓大家喝上一口美味健康的飲品。<br>
+			Bobii Frutii Signature Drink是我們精心特選出來的六款特調飲品，每一杯特調飲品背後都有個動人故事，今天是誰讓你心動了呢？<br>
+		</div>
+		<div class="row classic">
+			<div class="col-xs-12 col-md-4"><a href="images/greenRomance.jpg" data-lightbox="image-1" data-title="Green Romance"><img src="images/greenRomance.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-4"><a href="images/mermaidsTears.jpg" data-lightbox="image-2" data-title="Mermaids Tears"><img src="images/mermaidsTears.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-4"><a href="images/exBBmilktea.jpg" data-lightbox="image-3" data-title="Extraordinary Bubble Milk Tea"><img src="images/exBBmilktea.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-4"><a href="images/dontWantWork.jpg" data-lightbox="image-4" data-title="Don't Want To Work"><img src="images/dontWantWork.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-4"><a href="images/dontGrowUp.jpg" data-lightbox="image-5" data-title="Don't Want To Grow Up"><img src="images/dontGrowUp.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-4"><a href="images/ugiSnow.jpg" data-lightbox="image-6" data-title="Ugi Snow"><img src="images/ugiSnow.jpg" alt=""></a>
+			</div>
+		</div><!-- row -->
+	</div><!-- container -->
+	<footer>
+		<div class="footertext">
+			<span>Copyright 2017</span> <span>芙緹國際股份有限公司</span> <span>聯絡地址：台北市大安區基隆路二段164號14樓</span> <span>公司電話：(02)2732-5126</span>
+			<span><a href="https://www.facebook.com/bobii.tw/"><i class="fa fa-facebook" aria-hidden="true"></i>粉絲專頁</a></span>
+		</div>
+	</footer>
+	<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+        <script src="js/lightbox.min.js"></script>
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+       var st = $(this).scrollTop();
+       //console.log("this scroll pos: " + st + ", last scroll pos: "+ lastScrollTop);
+       if(st<=100){
+        console.log("begin");
+          $(".navbar").css("transform", "translateY(0)");
+       }else{
+          if(st > lastScrollTop){
+            console.log("up");
+            $(".navbar").css("transform", "translateY(-80px)");
+           } else {
+            console.log("down");
+            $(".navbar").css("transform", "translateY(0)");
+           }
+       }
+
+       lastScrollTop = st;
+    });
+
+  
+    lightbox.option({
+      
+      'fitImagesInViewport': false
+    })
+
+    
+  </script>
+	
+	
+</body>
+</html>

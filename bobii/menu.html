@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bobii Fruitii-經典特調</title>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+		body{
+			margin-top: -20px;/*為什麼上面有空隙*/
+			padding: 0;
+			height: 200vh;
+		}
+		header{
+			width:100%;
+			height: 400px;
+			background: url(images/cover3.jpg) center 0 no-repeat;
+			background-size: cover;
+			position: relative;
+			font-family: 'Nunito', sans-serif;
+			color: white;
+
+		}
+		header h1{
+			text-align: center;
+			position: relative;
+			top:45%;
+			display: block;
+			height: 100px;
+			width: 900px;
+			left: 50%;
+			margin-left: -450px;
+		}
+		header .title{
+			font-size: 80px;
+			letter-spacing: 22px;
+
+		}
+		/*---------------------視窗上方固定選單-----------------------------*/
+		nav{
+			width:100%;
+			position:fixed;
+			background:rgba(0,0,0,0.59);
+			z-index: 99;
+			}
+		nav ul{
+			width:100%;
+			max-width:1480px;
+			text-align:center;
+			
+			margin:0 auto;
+			overflow: hidden;
+			}
+		nav ul li{
+			display:inline-block;
+			height:80px;
+			}
+		nav ul li a{
+			text-decoration:none;
+			padding:10px 40px;
+			color:rgba(255,255,255,1.00);
+			line-height:80px;
+			
+			}
+		nav ul li a:hover{
+			text-decoration:none;
+			color: pink;
+
+			}
+		nav ul li a:active, nav ul li a:focus{
+			text-decoration:none;
+			color: #FFE583;
+		}
+
+
+		#logo img{
+			display: inline-block;
+			width: auto;
+			height: 70px;
+			vertical-align: middle;
+			
+		}
+		.navbar{
+	      transition: all .5s;
+	    }
+		/*---------------------內容-----------------------------*/
+		.classic{
+			margin-top: 20px;
+			text-align: center;
+
+		}
+		.classic img{
+			width: 100%;
+			max-width: 800px;
+			margin-bottom:15%;
+			
+		}
+		.text{
+			margin: 0 auto;
+			width: 100%;
+			max-width: 800px;
+			padding: 30px 20px 5px 20px;
+		}
+		.text a:hover{
+		text-decoration:none;
+		color: pink;
+		cursor: pointer;
+
+		}
+		.text a:active, .text a:focus{
+			text-decoration:none;
+			color: #FFE583;
+		}
+		#menu3 img, #menu4 img{
+			border: 2px solid black;
+		}
+
+
+		footer{
+			height: 6%;
+			background:#B1B0B2;
+			color: white;
+			margin-top: 1%;
+			display: flex;
+			align-items: center;
+			
+		}
+		.footertext{
+			margin-left: 10%;
+			margin-right: 10%;
+			max-width: 100%;
+			
+		
+		}
+		.fa-facebook{
+		vertical-align: middle;
+		font-size: 1.2em;
+		margin: 0 5px;
+	
+		}
+		.footertext a:hover{
+		text-decoration:none;
+		color: pink;
+
+		}
+		.footertext a:active, .footer a:focus{
+			text-decoration:none;
+			color: #FFE583;
+		}
+		footer .up{
+		width:50px;
+		height:50px;
+		background:rgba(255,200,200,0.65);
+		position:fixed;
+		bottom:16%;
+		right:10px;
+		border-radius:50%;
+		color:#000000;
+		text-align:center;
+		line-height:50px;
+		text-decoration:none;
+		box-shadow:3px 3px 8px rgba(123,123,123,0.61);
+		-webkit-box-shadow:3px 3px 8px rgba(123,123,123,0.61);
+		cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-fixed-top">
+		<ul>
+			<li><a href="news.html">最新消息</a></li>
+			<li><a href="">全部商品</a></li>
+			<li id="logo"><a href="index.html#area1"><img src="images/logo.png" alt="首頁"></a></li>
+			<li><a href="index.html#area3">關於我們</a></li>
+			<li><a href="index.html#area4">門市據點</a></li>
+		</ul>
+	</nav>
+	<h1>	
+		<span class="title">Menu</span>
+	</h1>
+	</header>
+	<div class="container">
+		<div class="row text">
+			Bobii Frutii Bobii Frutii依<a id="aulait" >原味茶/歐蕾</a>、<a id="fruitea">果茶</a>、<a id="matcha">抹茶</a>、<a id="iceblend">冰沙</a>系列分為四大類。<br>
+			無論任何種類，Bobii Frutii的每杯飲品皆可<a id="bubble">加購珍珠</a>，我們的珍珠堅持手工製作，使用天然水果與手工熬煮的糖，除此之外更研發出原味、黑糖、藍蝴蝶與不定期推出季節限定Bobii，每一口咬下都散發出水果與糖香，越嚼越香。<br>
+		</div>
+		<div class="row classic">
+			<div id="menu1" class="col-xs-12 col-md-12"><img src="images/menu1.jpg" alt=""></div>
+			<div id="menu2" class="col-xs-12 col-md-12"><img src="images/menu2.jpg" alt=""></div>
+			<div id="menu3" class="col-xs-12 col-md-12"><img src="images/menu3.jpg" alt=""></div>
+			<div id="menu4" class="col-xs-12 col-md-12"><img src="images/menu4.jpg" alt=""></div>
+			<div id="menu5" class="col-xs-12 col-md-12"><img src="images/menu5.jpg" alt=""></div>
+			
+		</div><!-- row -->
+	</div><!-- container -->
+	<footer>
+		<div class="footertext">
+			<span>Copyright 2017</span> <span>芙緹國際股份有限公司</span> <span>聯絡地址：台北市大安區基隆路二段164號14樓</span> <span>公司電話：(02)2732-5126</span>
+			<span><a href="https://www.facebook.com/bobii.tw/"><i class="fa fa-facebook" aria-hidden="true"></i>粉絲專頁</a></span>
+		</div>
+		<a class="up">TOP</a>
+	</footer>
+	<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+       var st = $(this).scrollTop();
+       //console.log("this scroll pos: " + st + ", last scroll pos: "+ lastScrollTop);
+       if(st<=100){
+        console.log("begin");
+          $(".navbar").css("transform", "translateY(0)");
+       }else{
+          if(st > lastScrollTop){
+            console.log("up");
+            $(".navbar").css("transform", "translateY(-80px)");
+           } else {
+            console.log("down");
+            $(".navbar").css("transform", "translateY(0)");
+           }
+       }
+
+       lastScrollTop = st;
+    });
+
+    $('#aulait').click(function(){
+    	$('body').animate({
+    		scrollTop:849
+    		},1500);
+    });
+
+    $('#fruitea').click(function(){
+    	$('body').animate({
+    		scrollTop:2152
+    		},1500);
+    });
+
+    $('#matcha').click(function(){
+    	$('body').animate({
+    		scrollTop:3458
+    		},1500);
+    });
+
+    $('#iceblend').click(function(){
+    	$('body').animate({
+    		scrollTop:4544
+    		},1500);
+    });
+    $('#bubble').click(function(){
+    	$('body').animate({
+    		scrollTop:5979
+    		},1500);
+    });
+
+    $('.up').click(function(){
+    	$('body').animate({
+    		scrollTop:0
+    		},1500);
+    });
+
+    
+  </script>
+	
+	
+</body>
+</html>
