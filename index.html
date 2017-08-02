@@ -122,6 +122,16 @@
 		<div class="container" id="team" name="team">
 		<br>
 
+				<div class="skills">
+
+					<div data-label="HTML5" data-level="85" class="chart"><span></span><p></p></div>
+					<div data-label="CSS3" data-level="85" class="chart"><span></span><p></p></div>
+					<div data-label="JQUERY/JS" data-level="60" class="chart"><span></span><p></p></div>
+					<div data-label="PHP/MYSQL" data-level="20" class="chart"><span></span><p></p></div>
+					<div data-label="ILLUSTRATOR" data-level="90" class="chart"><span></span><p></p></div>
+					<div data-label="PHOTOSHOP" data-level="90" class="chart"><span></span><p></p></div>
+				</div>
+
 
 			<br>
 			<br>
@@ -154,9 +164,9 @@
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/extra.jpg" alt="">
-							<figcaption>
+							<figcaption class="work_bobii">
 								<h5>Bobii Fruitii</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<a data-toggle="modal" href="#myModal_1" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
@@ -166,7 +176,7 @@
 						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
 						      
-						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						    <div class="modal-dialog">
 						      <div class="modal-content">
 						        <div class="modal-header">
@@ -177,7 +187,7 @@
 						          <p><img class="img-responsive" src="assets/img/portfolio/work1.png" alt=""></p>
 						          <p>Bobii Frutii是一個手搖飲料店品牌，因為很喜歡他們的產品以及品牌視覺風格，所以取用官方粉絲專頁上的圖片素材來做為個人第一個網頁開發練習。</p><br>
 									<p>使用技術：HTML,CSS,Bootstrap,jQuery</p>
-						          <p><b><a href="https://xiang0922.github.io/bobii/index.html"><span class="glyphicon glyphicon-arrow-right"></span>進入網頁</a></b></p>
+						          <p class="enter_work"><b><a href="https://xiang0922.github.io/bobii/index.html"><span class="glyphicon glyphicon-arrow-right"></span>進入網頁</a></b></p>
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -191,14 +201,33 @@
 				<div class="col-md-6">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
-							<figcaption>
-								<h5>UI DESIGN</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+							<img class="img-responsive" src="assets/img/portfolio/circle.jpg" alt="">
+							<figcaption class="work_circle">
+								<h5>The Circle</h5>
+								<a data-toggle="modal" href="#myModal_2" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
+				<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">The Circle</h4>
+							</div>
+							<div class="modal-body">
+								<p><img class="img-responsive" src="assets/img/portfolio/work2.png" alt=""></p>
+								<p>Bobii Frutii是一個手搖飲料店品牌，因為很喜歡他們的產品以及品牌視覺風格，所以取用官方粉絲專頁上的圖片素材來做為個人第一個網頁開發練習。</p><br>
+								<p>使用技術：HTML,CSS,Bootstrap,jQuery,Javascript,php</p>
+								<p class="enter_work"><b><a href="https://xiang0922.github.io/bobii/index.html"><span class="glyphicon glyphicon-arrow-right"></span>進入網頁</a></b></p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 				
 
 			</div><!-- /row -->
@@ -297,5 +326,36 @@
 	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+	<script>
+        var gage = {
+            init: function(){
+                // restart used for demo purposes - change to $('.gage').each(function(i){
+                $('.chart span').css({"width" : "0"}).parent().each(function(i){
+                    // Loop through .gage elements
+                    $('p', this).html($(this).attr("data-label"));
+                    // Set p html value to the data-label attr set in the element
+                    var timeout = parseInt(i) * 60 + 1100;
+                    // Set a timeout based on the iteration multiplied by 60 (will affect delay between animations)
+                    $('span', this).delay(timeout).animate({"opacity" : "1"}, 0, function(){
+                        //Delay
+                        $(this).css({"width" : $(this).parent().attr("data-level") + "%"});
+                    });
+                });
+            }
+        }
+
+        $(document).scroll(function() {
+            console.log($(document).scrollTop());
+        })
+        $(document).ready(function(){
+            // Call gage init function
+            gage.init();
+            // Interval used for demo purposes - remove if using
+//            setInterval(function() {
+//                gage.init();
+//            }, 10000);
+        });
+
+    </script>
   </body>
 </html>

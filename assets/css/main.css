@@ -627,8 +627,73 @@ a:after {
 	color: white;
 }
 
-.grid figcaption{
+.grid figcaption.work_bobii{
 	background: #827041 !important;
+}
+.grid figcaption.work_circle{
+	background: #c9e2e0 !important;
+
+}
+.grid figcaption.work_circle h5{
+	color: #2f2f2f !important;
+}
+.enter_work{
+	text-align: center;
+	font-size: 20px;
+}
+
+/*---------------------skill chart------------------------*/
+.skills{
+	width:800px;
+	margin:20px auto;
+	padding:20px;
+	background:#fff;
+}
+
+
+.skills .chart{
+	position:relative;
+	display: block;
+	padding: 10px;
+	margin: 0 0 3px 0;
+	text-align: center;
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.1);
+	background:rgba(255,255,255,0.5);
+}
+
+.skills .chart:after{
+	content: "";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+
+}
+
+.skills .chart span{
+	position: absolute;
+	left: 0;
+	top:0;
+	background: url("http://www.kriesi.at/themes/flashlight/wp-content/themes/flashlight/images/patterns/light-diagonal-wide-left-to-right.png") repeat #f898a0;
+	z-index:0;
+	height:100%;
+	width:0px;
+	-webkit-transition: all ease-in-out 1s;
+	-moz-transition: all ease-in-out 1s;
+	-ms-transition: all ease-in-out 1s;
+	-o-transition: all ease-in-out 1s;
+	transition: all ease-in-out 1s;
+}
+
+.skills .chart p{
+	position: relative;
+	z-index: 100;
+	margin: 0;
+	color:#333;
+	font-size: 0.9em;
+	line-height:1.2em;
 }
 
 
